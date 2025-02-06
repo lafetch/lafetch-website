@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
@@ -23,5 +16,19 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.svg-fill-animation {
+  clip-path: inset(100% 0 0 0); /* Start hidden */
+  animation: fillUp 2s ease-in-out forwards;
+}
+
+@keyframes fillUp {
+  0% {
+    clip-path: inset(100% 0 0 0); /* Fully hidden */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
   }
 }
