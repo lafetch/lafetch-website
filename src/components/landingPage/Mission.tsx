@@ -4,9 +4,7 @@ import Image from "next/image";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
-const secondary = localFont({
-  src: "./../../app/fonts/KonnectRegular.otf",
-});
+
 
 function Mission() {
   return (

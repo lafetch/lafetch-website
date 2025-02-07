@@ -4,13 +4,11 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import localFont from "next/font/local";
-import { time } from "console";
+
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
-const secondary = localFont({
-  src: "./../../app/fonts/KonnectRegular.otf",
-});
+
 
 gsap.registerPlugin(ScrollTrigger);
 

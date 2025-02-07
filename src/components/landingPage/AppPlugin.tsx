@@ -16,9 +16,6 @@ const data = [
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
-const secondary = localFont({
-  src: "./../../app/fonts/KonnectRegular.otf",
-});
 
 function AppPlugin() {
   const [index, cycleIndex] = useCycle(0, 1, 2); // Loop through the 3 states
@@ -46,16 +43,20 @@ function AppPlugin() {
               separator=","
               direction="up"
               duration={2}
-              className={`text-8xl ${primary.className} font-bold`}
+              className={`text-7xl 2xl:text-8xl ${primary.className} font-bold`}
             />
-            <span className={`text-8xl ${primary.className} font-bold`}>+</span>
+            <span
+              className={`text-7xl 2xl:text-8xl ${primary.className} font-bold`}
+            >
+              +
+            </span>
           </div>
           <h3 className={`uppercase ${primary.className} text-2xl`}>
             {data[index].label}
           </h3>
         </div>
         <button
-          className={`${primary.className} border border-[#D9D9D9] rounded-3xl px-8 py-2 text-2xl`}
+          className={`${primary.className} border border-[#D9D9D9] rounded-3xl px-8 py-2 text-xl 2xl:text-2xl`}
         >
           DOWNLOAD NOW
         </button>
