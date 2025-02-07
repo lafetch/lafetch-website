@@ -91,11 +91,11 @@ function HeroSection() {
         id="banner"
         className="p-20 py-28 flex justify-between gap-10 items-center h-screen max-w-8xl sticky top-0 overflow-hidden"
       >
-        <div className="flex-1 w-full h-full flex justify-start items-start relative ">
+        <div className="flex-1 w-full h-full flex justify-start items-start relative text-nowrap">
           <h1
-            className={`text-7xl 2xl:text-8xl relative welcome ${primary.className}`}
+            className={`md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl relative welcome ${primary.className}`}
           >
-            Welcome to{" "}
+            Welcome to <br />
             <span className="welcome-lafetch inline-block">Lafetch</span>
           </h1>
           <div
@@ -114,7 +114,7 @@ function HeroSection() {
           </div>
         </div>
         <div
-          className={`flex-1 flex justify-start items-end h-full ${secondary.className}`}
+          className={` flex justify-start items-end h-full ${secondary.className} flex-1 w-full`}
         >
           <Word value={paragraph} />
           {/* Replace the h1 if needed */}
