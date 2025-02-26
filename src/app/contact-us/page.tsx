@@ -12,7 +12,9 @@ const secondary = localFont({
 });
 
 export default function Page() {
-  const [activeForm, setActiveForm] = useState("customer"); // "customer" or "brand"
+  const [activeForm, setActiveForm] = useState<"customer" | "brand">(
+    "customer"
+  );
   const [submitMessage, setSubmitMessage] = useState("");
 
   return (
