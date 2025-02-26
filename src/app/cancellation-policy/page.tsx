@@ -13,7 +13,7 @@ export default function CancellationPolicy() {
   return (
     <>
       <div
-        className={`max-w-7xl mx-auto p-20 py-28 text-gray-300 ${secondary.className}`}
+        className={`max-w-7xl mx-auto p-6 lg:p-20  py-28 text-gray-300 ${secondary.className}`}
       >
         <h1 className={`font-bold text-4xl ${primary.className}`}>
           {" "}

@@ -9,12 +9,19 @@ type LayoutWrapperProps = {
 function LayoutWrapper({ children }: LayoutWrapperProps) {
   const [loading, setLoading] = useState(true);
 
+  // Only run the loading timer once
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
-  return <>{loading ? <Loader /> : children}</>;
+  return (
+    <>
+      <div className="md:hidden">{children}</div>
+
+      <div className="hidden md:block">{loading ? <Loader /> : children}</div>
+    </>
+  );
 }
 
 export default LayoutWrapper;

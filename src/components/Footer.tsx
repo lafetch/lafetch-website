@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex flex-col justify-around items-center bg-black text-white p-10 xl:p-20 py-16">
+    <footer className="hidden lg:flex flex-col justify-around items-center bg-black text-white p-10 xl:p-20 py-16">
       <div className="pb-20 flex justify-between items-start  w-full">
         <div className="h-full w-2/5 flex flex-col justify-between items-start">
           <Image

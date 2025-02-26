@@ -6,18 +6,24 @@ import FeaturesParallax from "@/components/landingPage/FeaturesParallax";
 import HeroSection from "@/components/landingPage/HeroSection";
 import Mission from "@/components/landingPage/Mission";
 import VideoSection from "@/components/landingPage/VideoSection";
+import MobilePage from "@/components/MobilePage";
 
 export default function Home() {
   return (
-    <main className="">
-      <HeroSection />
-      <VideoSection />
-      <AppPlugin />
-      <Mission />
-      <FeaturesParallax />
-      <BrandsList />
-      <BottomVideoSection />
-      <Footer />
-    </main>
+    <>
+      <main className="hidden lg:block">
+        <HeroSection />
+        <VideoSection />
+        <AppPlugin />
+        <Mission />
+        <FeaturesParallax />
+        <BrandsList />
+        <BottomVideoSection />
+        <Footer />
+      </main>
+      <main className="lg:hidden">
+        <MobilePage />
+      </main>
+    </>
   );
 }

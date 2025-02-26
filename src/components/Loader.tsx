@@ -55,7 +55,7 @@ function Loader() {
   );
   return (
     <div
-      className="w-full bg-black h-screen flex justify-center items-center absolute z-50"
+      className="w-full bg-black h-screen hidden lg:flex justify-center items-center absolute z-50"
       ref={LoaderRef}
     >
       <LoaderQR />
@@ -83,7 +83,7 @@ const LoaderQR = () => {
       </div>
       <h1 className="text-center text-5xl text-[#BCA7FF]">
         Download the app <br />
-        while we cutrate your experience
+        while we curate your experience
       </h1>
     </div>
   );
