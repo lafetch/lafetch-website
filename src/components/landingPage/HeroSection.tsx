@@ -67,7 +67,19 @@ function HeroSection() {
               {
                 width: "100%",
                 duration: 1,
+                opacity: 0,
                 height: "100%",
+                ease: "power1.inOut",
+              },
+              "<"
+            )
+            .to(
+              ".banner-image-2",
+              {
+                width: "100%",
+                duration: 1,
+                height: "100%",
+                opacity: 1,
                 ease: "power1.inOut",
               },
               "<"
@@ -96,7 +108,17 @@ function HeroSection() {
             className={`md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl relative welcome ${primary.className}`}
           >
             Welcome to <br />
-            <span className="welcome-lafetch inline-block">Lafetch</span>
+            <span className="welcome-lafetch inline-block">
+              <Image
+                src="/logo-hero.svg"
+                alt="Lafetch Logo"
+                priority={true}
+                loading="eager"
+                width={350}
+                height={300}
+                className="  object-cover"
+              />
+            </span>
           </h1>
           <div
             className="absolute bottom-0 left-0 w-full h-full flex justify-start items-end
@@ -110,6 +132,15 @@ function HeroSection() {
               width={400}
               height={400}
               className="lg:size-40 2xl:size-56 banner-image object-cover"
+            />
+            <Image
+              src="/hero-image-2.png"
+              alt="Lafetch Logo"
+              priority={true}
+              loading="eager"
+              width={400}
+              height={400}
+              className="absolute lg:size-40 2xl:size-56 banner-image-2 object-contain opacity-0 bg-white"
             />
           </div>
         </div>

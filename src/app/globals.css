@@ -23,12 +23,27 @@ body {
   clip-path: inset(100% 0 0 0); /* Start hidden */
   animation: fillUp 2s ease-in-out forwards;
 }
+/* 
+@keyframes fillUp {
+  0% {
+    clip-path: inset(100% 0 0 0); 
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+} */
+
+.letter-fill {
+  /* Initially hide each letter’s fill */
+  clip-path: inset(100% 0 0 0);
+  animation: fillUp 2s ease-in-out forwards;
+}
 
 @keyframes fillUp {
   0% {
-    clip-path: inset(100% 0 0 0); /* Fully hidden */
+    clip-path: inset(100% 0 0 0);
   }
   100% {
-    clip-path: inset(0 0 0 0); /* Fully visible */
+    clip-path: inset(0 0 0 0);
   }
 }

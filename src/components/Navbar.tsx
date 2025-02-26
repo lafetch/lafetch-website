@@ -8,9 +8,10 @@ const secondary = localFont({
 });
 
 const links = [
-  { name: "WORLD", href: "/world" },
-  { name: "SPOTLIGHT", href: "/spotlight" },
-  { name: "GET IN TOUCH", href: "/contact" },
+  { name: "ABOUT US", href: "/about" },
+  { name: "DISCOVER", href: "/discover" },
+  { name: "LF QUICK", href: "/quick" },
+  { name: "CONTACT US", href: "/contact-us/" },
 ];
 
 function Navbar() {

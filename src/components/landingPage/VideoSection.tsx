@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import localFont from "next/font/local";
+import Image from "next/image";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
@@ -29,9 +30,18 @@ function VideoSection() {
         {/* Audio toggle button */}
       </div>
       <h1 className={`text-8xl ${primary.className}`}>Fetch your fashion</h1>
-      <h1 className={`text-2xl pt-6 ${secondary.className} `}>
-        Creating a community that celebrates the <br /> spirit of boundless
-        curiosity and creativity.
+      <h1
+        className={`text-2xl pt-6 ${secondary.className} flex items-center gap-3 `}
+      >
+        WITH JUST{" "}
+        <Image
+          src="/white_QR.png"
+          alt="Lavender"
+          width={100}
+          height={100}
+          className="w-20 h-20"
+        />
+        A SINGLE SCAN
       </h1>
     </div>
   );

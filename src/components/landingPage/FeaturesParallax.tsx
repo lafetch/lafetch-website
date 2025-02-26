@@ -142,28 +142,52 @@ function FeaturesParallax() {
           loading="eager"
         />
       </div>
-      <div className="h-full bg-black text-white flex w-full justify-between items-center px-32 p-10 2xl:p-20 z-30 ">
-        <Image
-          src="/symbol_1.svg"
-          alt="homegrown"
-          width={120}
-          height={100}
-          className="object-cover "
-        />
-        <Image
-          src="/symbol_2.svg"
-          alt="homegrown"
-          width={70}
-          height={100}
-          className="object-cover  "
-        />
-        <Image
-          src="/symbol_3.svg"
-          alt="homegrown"
-          width={120}
-          height={100}
-          className="object-cover "
-        />
+      <div className="h-full bg-black text-white flex w-full justify-between items-center px-20 2xl:px-32 p-10 2xl:p-20 z-30 ">
+        <div className="flex justify-between flex-col items-center gap-8 h-full">
+          <Image
+            src="/symbol_1.svg"
+            alt="homegrown"
+            width={120}
+            height={100}
+            className="object-cover  "
+          />
+          <h1>100% AUTHENTIC</h1>
+        </div>
+        <div className="flex justify-between flex-col items-center gap-8 h-full">
+          <Image
+            src="/symbol_2.svg"
+            alt="homegrown"
+            width={70}
+            height={100}
+            className="object-cover  "
+          />
+          <h1 className="text-center">
+            30 MINUTE DELIVERY <br /> IN DELHI NCR
+          </h1>
+        </div>
+        <div className="flex justify-between flex-col items-center gap-8 h-full">
+          <Image
+            src="/symbol_4.svg"
+            alt="homegrown"
+            width={120}
+            height={100}
+            className="object-cover  "
+          />
+          <h1 className="text-center">
+            FAST DELIVERIES <br />
+            PAN INDIA{" "}
+          </h1>
+        </div>
+        <div className="flex justify-center flex-col items-center gap-8">
+          <Image
+            src="/symbol_3.svg"
+            alt="homegrown"
+            width={120}
+            height={100}
+            className="object-cover "
+          />
+          <h1>HASSLE FREE EXCHANGE</h1>
+        </div>
       </div>
     </div>
   );
