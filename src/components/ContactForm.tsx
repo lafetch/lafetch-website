@@ -39,8 +39,9 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
       } else {
         setSubmitMessage(data.message || "Something went wrong.");
       }
-    } catch (err) {
+    } catch (e) {
       setSubmitMessage("An error occurred while submitting the form.");
+      console.log(e);
     }
     setIsSubmitting(false);
   }

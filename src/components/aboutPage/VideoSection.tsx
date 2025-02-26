@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import localFont from "next/font/local";
-import Image from "next/image";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });

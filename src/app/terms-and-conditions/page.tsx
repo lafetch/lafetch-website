@@ -23,24 +23,26 @@ export default function TermsAndConditions() {
           {/* 1. Use of Platform */}
           <h1 className="text-xl font-bold">1. Use of Platform</h1>
           <p>
-            Welcome to LAFETCH ( "Site" or "Platform " ). The website
-            www.la-fetch.com and mobile application Lafetch available on the
-            Apple and Android App Store is owned and operated by AS10 Techretail
-            Pvt Ltd ("Lafetch"), a company incorporated under the provisions of
-            the Companies Act, 2013 with its registered office at 122, First
-            Floor, Universal Trade Tower, Sohna Road, Omaxe City Centre,
-            Sector-49, Manesar, Gurugram, Harayana, 122101. You may be accessing
-            our Site from a computer or mobile phone device (through an iOS or
-            Android application) and these Terms of Use govern your use of our
-            Site and your conduct, regardless of the means of access.
+            Welcome to LAFETCH ( &quot;Site&quot; or &quot;Platform &quot; ).
+            The website www.la-fetch.com and mobile application Lafetch
+            available on the Apple and Android App Store is owned and operated
+            by AS10 Techretail Pvt Ltd (&quot;Lafetch&quot;), a company
+            incorporated under the provisions of the Companies Act, 2013 with
+            its registered office at 122, First Floor, Universal Trade Tower,
+            Sohna Road, Omaxe City Centre, Sector-49, Manesar, Gurugram,
+            Harayana, 122101. You may be accessing our Site from a computer or
+            mobile phone device (through an iOS or Android application) and
+            these Terms of Use govern your use of our Site and your conduct,
+            regardless of the means of access.
           </p>
           <p>
             The Platform is only to be used for your personal non-commercial use
             and information. Your use of the services and features of the
             Platform shall be governed by these Terms and Conditions
-            (hereinafter "Terms of Use") along with the Privacy Policy, Shipping
-            Policy and Cancellations, Return, Exchange and Refund Policy
-            (together "Policies") as modified and amended from time to time.
+            (hereinafter &quot;Terms of Use&quot;) along with the Privacy
+            Policy, Shipping Policy and Cancellations, Return, Exchange and
+            Refund Policy (together &quot;Policies&quot;) as modified and
+            amended from time to time.
           </p>
           <p>
             By merely accessing or using the Platform, you are acknowledging,
@@ -216,13 +218,13 @@ export default function TermsAndConditions() {
             13. Intellectual Property Rights
           </h1>
           <p>
-            The "LAFETCH" and “LF” names, logos, and all related product and
-            service names, design marks, and slogans are the trademarks or
-            service marks of Lafetch. All other marks on the Site belong to
-            their respective owners. No trademark license is granted by
-            accessing the Site. Marks displayed on the Site are the intellectual
-            property of their owners, and Lafetch is not liable for any
-            unauthorized use.
+            The &quot;LAFETCH&quot; and &quot;LF&quot; names, logos, and all
+            related product and service names, design marks, and slogans are the
+            trademarks or service marks of Lafetch. All other marks on the Site
+            belong to their respective owners. No trademark license is granted
+            by accessing the Site. Marks displayed on the Site are the
+            intellectual property of their owners, and Lafetch is not liable for
+            any unauthorized use.
           </p>
 
           {/* 14. Limited License */}
@@ -241,12 +243,12 @@ export default function TermsAndConditions() {
             15. Representations and Warranties
           </h1>
           <p>
-            This Site is provided "AS IS". We make no representations regarding
-            the use or accuracy of the content on the Site. Lafetch is not
-            liable for any loss incurred as a result of reliance on the content.
-            Your uninterrupted access to the Site may be affected by factors
-            beyond our control, and Lafetch reserves the right to change or
-            discontinue any aspect of the Site at any time.
+            This Site is provided &quot;AS IS&quot;. We make no representations
+            regarding the use or accuracy of the content on the Site. Lafetch is
+            not liable for any loss incurred as a result of reliance on the
+            content. Your uninterrupted access to the Site may be affected by
+            factors beyond our control, and Lafetch reserves the right to change
+            or discontinue any aspect of the Site at any time.
           </p>
 
           {/* 16. Disclaimer of Warranty and Limitations of Liability */}
@@ -254,7 +256,7 @@ export default function TermsAndConditions() {
             16. Disclaimer of Warranty and Limitations of Liability
           </h1>
           <p>
-            THE SITE IS PRESENTED "AS IS." NEITHER WE NOR OUR HOLDING,
+            THE SITE IS PRESENTED &quot;AS IS.&quot; NEITHER WE NOR OUR HOLDING,
             SUBSIDIARIES, AFFILIATES, PARTNERS, OR LICENSORS MAKE ANY
             REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION
             WITH THESE TERMS OR THE SITE OR ANY CONTENT, INCLUDING WARRANTIES OF
@@ -307,7 +309,7 @@ export default function TermsAndConditions() {
             You agree to defend, indemnify, and hold harmless Lafetch, its
             employees, directors, officers, agents, counsel(s), and affiliates
             from any claims, liabilities, damages, losses, or expenses
-            (including attorney's fees) arising out of your actions or
+            (including attorney&apos;s fees) arising out of your actions or
             inactions, including any breach of these Terms of Use or violation
             of applicable laws.
           </p>

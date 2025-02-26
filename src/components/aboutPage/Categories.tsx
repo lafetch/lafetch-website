@@ -4,9 +4,6 @@ import localFont from "next/font/local";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
-const secondary = localFont({
-  src: "./../../app/fonts/KonnectRegular.otf",
-});
 
 const categories = [
   {
@@ -49,7 +46,10 @@ function Categories() {
     >
       <div className="grid grid-cols-3 grid-rows-2 gap-x-1 gap-y-10 max-w-8xl w-full">
         {categories.map((cat, i) => (
-          <div className="flex flex-col justify-center item-center gap-4">
+          <div
+            className="flex flex-col justify-center item-center gap-4"
+            key={i}
+          >
             <div
               key={i}
               className={`relative overflow-hidden  text-white h-32 md:h-36 lg:h-44 

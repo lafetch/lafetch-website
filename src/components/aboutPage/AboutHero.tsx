@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Word from "../Word";
+
 import localFont from "next/font/local";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",

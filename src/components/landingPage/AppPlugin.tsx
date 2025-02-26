@@ -34,7 +34,10 @@ function AppPlugin() {
       <div className="flex-1 flex justify-center items-center flex-col gap-10 overflow-hidden  w-1/2">
         <div className="flex  justify-around items-center w-full">
           {data.map((item, index) => (
-            <div className="flex flex-col gap-2 justify-around items-center">
+            <div
+              className="flex flex-col gap-2 justify-around items-center"
+              key={index}
+            >
               <div className="">
                 <CountUp
                   // Ensures animation restarts each time

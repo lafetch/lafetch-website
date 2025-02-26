@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import localFont from "next/font/local";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { div } from "framer-motion/client";
 
 const primary = localFont({
   src: "./../app/fonts/AlmarenaNeueDisplay-Regular.otf",

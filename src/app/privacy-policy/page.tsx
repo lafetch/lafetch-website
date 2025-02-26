@@ -22,17 +22,17 @@ export default function PrivacyPolicy() {
           {/* 1. General */}
           <h1 className="text-xl font-bold">1. General</h1>
           <p>
-            <strong>1.1</strong> Welcome to LAFETCH ( "Site" or "Platform " ).
-            The website www.la-fetch.com and mobile application Lafetch
-            available Apple and Android App Store is owned and operated by AS10
-            Techretail Pvt Ltd (" Lafetch "), is a company incorporated under
-            the provisions of the Companies Act, 2013 with its registered office
-            at 122, First Floor, Universal Trade Tower, Sohna Road, Omaxe City
-            Centre, Sector-49, Manesar, Gurugram, Harayana, 122101. You may be
-            accessing our Site from a computer or mobile phone device (through
-            an iOS or Android application) and this Privacy Policy will govern
-            your use of our Site and your conduct, regardless of the means of
-            access.
+            <strong>1.1</strong> Welcome to LAFETCH ( &quot;Site&quot; or
+            &quot;Platform &quot; ). The website www.la-fetch.com and mobile
+            application Lafetch available Apple and Android App Store is owned
+            and operated by AS10 Techretail Pvt Ltd (&quot; Lafetch &quot;), is
+            a company incorporated under the provisions of the Companies Act,
+            2013 with its registered office at 122, First Floor, Universal Trade
+            Tower, Sohna Road, Omaxe City Centre, Sector-49, Manesar, Gurugram,
+            Harayana, 122101. You may be accessing our Site from a computer or
+            mobile phone device (through an iOS or Android application) and this
+            Privacy Policy will govern your use of our Site and your conduct,
+            regardless of the means of access.
           </p>
           <p>
             Through the Platform, Lafetch inter alia facilitates the sale and
@@ -432,9 +432,10 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <strong>10.2</strong> To remove your contact information from our
-            mailing lists, click the "unsubscribe" link in our emails or contact
-            us at <em>customersupport@la-fetch.com</em>. We reserve the right to
-            limit membership based on available contact information.
+            mailing lists, click the &quot;unsubscribe&quot; link in our emails
+            or contact us at <em>customersupport@la-fetch.com</em>. We reserve
+            the right to limit membership based on available contact
+            information.
           </p>
 
           {/* 11. Change/Modification/Amendment to Privacy Policy */}

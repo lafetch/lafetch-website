@@ -58,8 +58,8 @@ export default function Page() {
             Contact Us
           </h2>
           <p className="text-gray-600 mb-2 2xl:mb-6">
-            We'd love to hear from you. Fill out the form below and we'll get
-            back to you as soon as possible.
+            We&apos;d love to hear from you. Fill out the form below and
+            we&apos;ll get back to you as soon as possible.
           </p>
           <ContactForm
             activeForm={activeForm}
