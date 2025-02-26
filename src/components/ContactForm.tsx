@@ -1,27 +1,35 @@
 "use client";
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 
-export default function ContactForm({ activeForm, setSubmitMessage }) {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+interface ContactFormProps {
+  activeForm: "customer" | "brand";
+  setSubmitMessage: (message: string) => void;
+}
+
+export default function ContactForm({
+  activeForm,
+  setSubmitMessage,
+}: ContactFormProps): JSX.Element {
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   // Customer form state
-  const [customerName, setCustomerName] = useState("");
-  const [customerEmail, setCustomerEmail] = useState("");
-  const [customerPhone, setCustomerPhone] = useState("");
-  const [customerMessage, setCustomerMessage] = useState("");
+  const [customerName, setCustomerName] = useState<string>("");
+  const [customerEmail, setCustomerEmail] = useState<string>("");
+  const [customerPhone, setCustomerPhone] = useState<string>("");
+  const [customerMessage, setCustomerMessage] = useState<string>("");
 
   // Brand form state
-  const [brandName, setBrandName] = useState("");
-  const [brandEmail, setBrandEmail] = useState("");
-  const [brandUrl, setBrandUrl] = useState("");
-  const [brandType, setBrandType] = useState("");
+  const [brandName, setBrandName] = useState<string>("");
+  const [brandEmail, setBrandEmail] = useState<string>("");
+  const [brandUrl, setBrandUrl] = useState<string>("");
+  const [brandType, setBrandType] = useState<string>("");
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>): Promise<void> {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage("");
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     // Append additional fields required by Web3Forms
     formData.append("formType", activeForm);
     formData.append("apikey", "cfb32157-4da4-42b7-b018-9480ffeef2a9");
@@ -39,15 +47,15 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
       } else {
         setSubmitMessage(data.message || "Something went wrong.");
       }
-    } catch (e) {
+    } catch (error) {
       setSubmitMessage("An error occurred while submitting the form.");
-      console.log(e);
+      console.log(error);
     }
     setIsSubmitting(false);
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 text-black ">
+    <form onSubmit={handleSubmit} className="space-y-4 text-black">
       {activeForm === "customer" ? (
         <>
           <div>
@@ -63,8 +71,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="name"
               required
               value={customerName}
-              onChange={(e) => setCustomerName(e.target.value)}
-              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm  "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setCustomerName(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -80,8 +90,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="email"
               required
               value={customerEmail}
-              onChange={(e) => setCustomerEmail(e.target.value)}
-              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setCustomerEmail(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -97,8 +109,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="phone"
               required
               value={customerPhone}
-              onChange={(e) => setCustomerPhone(e.target.value)}
-              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setCustomerPhone(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -114,8 +128,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               rows={4}
               required
               value={customerMessage}
-              onChange={(e) => setCustomerMessage(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm  resize-none"
+              onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+                setCustomerMessage(e.target.value)
+              }
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm resize-none"
             ></textarea>
           </div>
         </>
@@ -134,8 +150,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="brandName"
               required
               value={brandName}
-              onChange={(e) => setBrandName(e.target.value)}
-              className="mt-1 block w-full  p-2 rounded-md border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setBrandName(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -151,8 +169,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="email"
               required
               value={brandEmail}
-              onChange={(e) => setBrandEmail(e.target.value)}
-              className="mt-1 block w-full  p-2 rounded-md border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setBrandEmail(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -168,8 +188,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="brandUrl"
               required
               value={brandUrl}
-              onChange={(e) => setBrandUrl(e.target.value)}
-              className="mt-1 block w-full  p-2 rounded-md border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setBrandUrl(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
           <div>
@@ -185,8 +207,10 @@ export default function ContactForm({ activeForm, setSubmitMessage }) {
               id="brandType"
               required
               value={brandType}
-              onChange={(e) => setBrandType(e.target.value)}
-              className="mt-1 block w-full rounded-md  p-2 border-gray-300 shadow-sm "
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setBrandType(e.target.value)
+              }
+              className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm"
             />
           </div>
         </>
