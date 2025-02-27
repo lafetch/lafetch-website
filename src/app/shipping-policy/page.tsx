@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
@@ -279,7 +278,6 @@ export default function ShippingPolicy() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

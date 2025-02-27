@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import localFont from "next/font/local";
+import Link from "next/link";
 const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
@@ -32,11 +33,12 @@ function BottomVideoSection() {
         <h1 className={`text-8xl text-right ${primary.className} `}>
           Every piece <br /> has a story.
         </h1>
-        <button
+        <Link
+          href="/discover"
           className={`border border-[#D9D9D9] rounded-full px-8 py-4 text-2xl ${secondary.className}`}
         >
           DISCOVER NOW
-        </button>
+        </Link>
       </div>
     </div>
   );

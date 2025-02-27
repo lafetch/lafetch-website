@@ -3,6 +3,7 @@ import { ReactLenis } from "../libs/lenis";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Lafetch",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <body className={`relative`}>
           <Navbar />
           <LayoutWrapper>{children}</LayoutWrapper>
+          <Footer />
         </body>
       </html>
     </ReactLenis>

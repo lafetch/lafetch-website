@@ -18,10 +18,10 @@ function Footer() {
 
         <div className="h-full w-1/5 flex flex-col justify-start items-start gap-2">
           <h1 className="font-bold mb-4">WELCOME TO LAFETCH</h1>
-          <h1>HOME</h1>
-          <h1>ABOUT US</h1>
-          <h1>DISCOVER NOW</h1>
-          <h1>LAFETCH QUICK</h1>
+          <Link href="/">HOME</Link>
+          <Link href="/about">ABOUT US</Link>
+          <Link href="/discover">DISCOVER NOW</Link>
+          <Link href="/lf-quick">LAFETCH QUICK</Link>
         </div>
         <div className="h-full w-1/5 flex flex-col justify-start items-start gap-2">
           <h1 className="font-bold mb-4">ANNOUNCEMENTS</h1>

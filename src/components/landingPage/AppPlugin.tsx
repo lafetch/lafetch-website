@@ -4,6 +4,7 @@ import React from "react";
 import localFont from "next/font/local";
 
 import CountUp from "./CountUp"; // Ensure CountUp.tsx is in the same folder
+import Link from "next/link";
 
 const data = [
   { to: 100, label: "Styles" },
@@ -61,11 +62,12 @@ function AppPlugin() {
           ))}
         </div>
 
-        <button
+        <Link
+          href="https://onelink.to/q7u8yf"
           className={`${primary.className} border text-white bg-[#BCA7FF] rounded-3xl px-8 py-3 text-xl 2xl:text-2xl mt-10`}
         >
           DOWNLOAD NOW
-        </button>
+        </Link>
         <Image
           src="/lavender_QR.png"
           alt="App Plugin"

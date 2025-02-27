@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import AppPlugin from "@/components/landingPage/AppPlugin";
 import BottomVideoSection from "@/components/landingPage/BottomVideoSection";
 import BrandsList from "@/components/landingPage/BrandsList";
@@ -19,7 +18,6 @@ export default function Home() {
         <FeaturesParallax />
         <BrandsList />
         <BottomVideoSection />
-        <Footer />
       </main>
       <main className="lg:hidden">
         <MobilePage />
