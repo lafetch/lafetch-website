@@ -30,8 +30,11 @@ function MobilePage() {
         Fetch Your <br /> Fashion
       </h1>
       <h3 className="text-center z-10 leading-loose">
-        Creating a community that celebrates the spirit of boundless curiosity
-        and creativity.
+        curating the best collection of homegrown brands for you at your
+        doorstep
+      </h3>
+      <h3 className="text-center z-10 leading-loose pt-4">
+        Lafetch Quick delivering in 30 mins in Delhi & gurgaon
       </h3>
       <Link
         href="https://onelink.to/q7u8yf"

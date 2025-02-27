@@ -67,7 +67,7 @@ export default function ValuesSection() {
                 Made For Every You
               </p>
               <p className="self-start flex-1">
-                Change your mind? You can exchange twice.
+                Changed your mind? You can exchange twice.
               </p>
             </div>
             <hr className="mt-2 border-gray-600" />
