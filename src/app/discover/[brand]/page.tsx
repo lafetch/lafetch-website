@@ -4,7 +4,7 @@ import React from "react";
 
 import { useParams } from "next/navigation";
 
-function page() {
+function Page() {
   const params = useParams<{ brand: string }>();
   const brands = [
     {
@@ -61,4 +61,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
