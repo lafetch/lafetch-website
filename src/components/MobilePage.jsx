@@ -14,7 +14,7 @@ const secondary = localFont({
 function MobilePage() {
   return (
     <div
-      className={`relative h-[100dvh] overflow-hidden flex flex-col justify-center items-center p-10 gap-8 ${secondary.className}`}
+      className={`relative h-[100dvh] overflow-hidden flex flex-col justify-center items-center p-6 gap-8 ${secondary.className}`}
     >
       <Image
         src="/mobile-bg.png"
@@ -30,11 +30,12 @@ function MobilePage() {
         Fetch Your <br /> Fashion
       </h1>
       <h3 className="text-center z-10 leading-loose">
-        curating the best collection of homegrown brands for you at your
+        Curating the best collection of homegrown brands for you at your
         doorstep
       </h3>
-      <h3 className="text-center z-10 leading-loose pt-4">
-        Lafetch Quick delivering in 30 mins in Delhi & gurgaon
+      <h3 className="text-center z-10 leading-loose ">
+        LaFetch Quick delivering in <span className="font-bold">30 mins</span>{" "}
+        in Delhi & Gurgaon!
       </h3>
       <Link
         href="https://onelink.to/q7u8yf"
