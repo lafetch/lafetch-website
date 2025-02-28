@@ -8,20 +8,51 @@ const primary = localFont({
   src: "./../../app/fonts/AlmarenaNeueDisplay-Regular.otf",
 });
 
-interface BrandImage {
-  id: number;
-  src: string;
-  alt: string;
-  link: string;
-}
+// interface BrandImage {
+//   id: number;
+//   src: string;
+//   alt: string;
+//   link: string;
+// }
 
-// Replace with your 41 actual images: "1.png", "2.png", …, "41.png"
-const brandImages: BrandImage[] = Array.from({ length: 41 }, (_, i) => ({
-  id: i + 1,
-  src: `/brand-logos/${i + 1}.png`, // adjust folder path if needed
-  alt: `Brand ${i + 1}`,
-  link: `/discover/brand-page`,
-}));
+const brands = [
+  {
+    id: 1,
+    src: "/brand-logos/4.png",
+    alt: "brand 1",
+    name: "Belavous",
+  },
+  {
+    id: 2,
+    src: "/brand-logos/15.png",
+    alt: "brand 2",
+    name: "Gryfnn",
+  },
+  {
+    id: 3,
+    src: "/brand-logos/17.png",
+    alt: "brand 3",
+    name: "Lavenir",
+  },
+  {
+    id: 4,
+    src: "/brand-logos/10.png",
+    alt: "brand 4",
+    name: "EN-EM",
+  },
+  {
+    id: 5,
+    src: "/brand-logos/37.png",
+    alt: "brand 5",
+    name: "The_Tan_Clan",
+  },
+  {
+    id: 6,
+    src: "/brand-logos/41.png",
+    alt: "brand 6",
+    name: "Vyakti_India",
+  },
+];
 
 export default function BrandCarousel() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -81,15 +112,15 @@ export default function BrandCarousel() {
               className="pl-40 flex overflow-x-auto scrollbar-hide gap-4 pb-4 scroll-smooth"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {brandImages.map((image) => (
+              {brands.map((brand) => (
                 <Link
-                  key={image.id}
-                  href={image.link}
+                  key={brand.id}
+                  href={`/discover/${brand.name.toLowerCase()}`}
                   className="flex-shrink-0 w-60 h-60 xl:w-[300px] xl:h-[400px] relative"
                 >
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={brand.src}
+                    alt={brand.alt}
                     fill
                     className="object-contain"
                     sizes="300px"

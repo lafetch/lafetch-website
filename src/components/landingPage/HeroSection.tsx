@@ -116,7 +116,7 @@ function HeroSection() {
                 loading="eager"
                 width={350}
                 height={300}
-                className="  object-cover"
+                className="object-cover"
               />
             </span>
           </h1>
@@ -140,7 +140,7 @@ function HeroSection() {
               loading="eager"
               width={400}
               height={400}
-              className="absolute lg:size-40 2xl:size-56 banner-image-2 object-contain opacity-0 bg-white"
+              className="absolute lg:size-40 2xl:size-56 banner-image-2 object-cover opacity-0"
             />
           </div>
         </div>

@@ -10,32 +10,32 @@ const categories = [
     title: "Resortwear",
     subtitle: "FOR MEN AND WOMEN",
 
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-1.png",
   },
   {
     title: "Streetwear",
     subtitle: "FOR MEN AND WOMEN",
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-2.png",
   },
   {
     title: "Formalwear",
     subtitle: "FOR MEN AND WOMEN",
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-3.png",
   },
   {
     title: "Ethnicwear",
     subtitle: "FOR MEN AND WOMEN",
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-4.png",
   },
   {
     title: "Loungewear",
     subtitle: "FOR MEN AND WOMEN",
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-5.png",
   },
   {
     title: "Essentials",
     subtitle: "FOOTWEAR AND ACCESSORIES",
-    imageSrc: "/mission_1.jpg",
+    imageSrc: "/category-6.png",
   },
 ];
 

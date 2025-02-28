@@ -31,6 +31,7 @@ function DiscoverHero() {
           timeline
             .to(".discover-bg", {
               height: "100vh",
+              width: "100vw",
               duration: 1,
               ease: "power1.inOut",
             })
@@ -89,7 +90,7 @@ function DiscoverHero() {
           priority={true}
           width={2000}
           height={2000}
-          className="h-2/3 object-contain discover-bg absolute "
+          className="h-2/3 w-2/3 object-cover discover-bg absolute "
         />
         <div
           className={`flex text-5xl w-full h-full justify-center items-center absolute top-0 left-0 z-10 gap-6 ${primary.className}`}

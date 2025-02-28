@@ -77,7 +77,7 @@ export default function Page() {
         {/* Right column - Image */}
         <div className="w-full lg:w-1/2 relative hidden lg:block overflow-hidden h-full">
           <Image
-            src="/western.png"
+            src="/contact.jpg"
             alt="Contact us"
             objectFit="cover"
             width={500}
