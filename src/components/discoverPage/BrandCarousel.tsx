@@ -16,12 +16,12 @@ const primary = localFont({
 // }
 
 const brands = [
-  {
-    id: 1,
-    src: "/brand-logos/4.png",
-    alt: "brand 1",
-    name: "Belavous",
-  },
+  // {
+  //   id: 1,
+  //   src: "/brand-logos/4.png",
+  //   alt: "brand 1",
+  //   name: "Belavous",
+  // },
   {
     id: 2,
     src: "/brand-logos/15.png",

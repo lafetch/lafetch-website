@@ -8,12 +8,6 @@ function Page() {
   const params = useParams<{ brand: string }>();
   const brands = [
     {
-      id: 1,
-      src: "/brand-logos/4.png",
-      alt: "brand 1",
-      name: "Belavous",
-    },
-    {
       id: 2,
       src: "/brand-logos/15.png",
       alt: "brand 2",
