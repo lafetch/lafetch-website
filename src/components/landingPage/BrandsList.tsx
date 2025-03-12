@@ -37,7 +37,7 @@ export default function HorizontalSection() {
   };
 
   // Create an array of logo numbers from 1 to 41.
-  const logos = Array.from({ length: 41 }, (_, i) => i + 1);
+  const logos = Array.from({ length: 40 }, (_, i) => i + 1);
 
   // Divide logos into chunks for each slide:
   // Slide 0: first 12 logos (grid: 6 cols x 2 rows)

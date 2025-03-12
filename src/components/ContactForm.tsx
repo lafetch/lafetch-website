@@ -32,7 +32,8 @@ export default function ContactForm({
     const formData = new FormData(e.currentTarget);
     // Append additional fields required by Web3Forms
     formData.append("formType", activeForm);
-    formData.append("apikey", "cfb32157-4da4-42b7-b018-9480ffeef2a9");
+    // formData.append("apikey", "cfb32157-4da4-42b7-b018-9480ffeef2a9");
+    formData.append("apikey", "84b601f9-a5fe-4d1d-804f-5bd21ff0dd02");
     formData.append("subject", "New Submission from your Website");
 
     try {
