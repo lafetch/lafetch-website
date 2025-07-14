@@ -5,8 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Footer from "@/components/Footer";
-import GATracker from "./components/GATracker"; // Google analytics 
-// Analytics
+import GATracker from "./components/GATracker"; //
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
