@@ -1,19 +1,23 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 export default function GATracker() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!GA_ID) return;
-    if (typeof window.gtag !== 'function') return;
-    window.gtag('config', GA_ID, {
-      page_path: pathname,
-    });
+    if (window.gtag) {
+      window.gtag("config", "G-7WEZF6YEB9", {
+        page_path: pathname,
+      });
+    }
   }, [pathname]);
 
   return null;
