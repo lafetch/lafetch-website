@@ -7,7 +7,6 @@ import Mission from "@/components/landingPage/Mission";
 import VideoSection from "@/components/landingPage/VideoSection";
 import MobilePage from "@/components/MobilePage";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   title: "Lafetch",
