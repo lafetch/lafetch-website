@@ -5,9 +5,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Footer from "@/components/Footer";
-import GATracker from "./components/GATracker"; //
+import GATracker from "./components/GATracker";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-7WEZF6YEB9"; // fallback if not set in env
 
 export const metadata: Metadata = {
   title: "Lafetch",
@@ -17,15 +17,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ReactLenis root>
       <html lang="en">
         <head>
           <link rel="icon" href="/favicon.png" />
-          {/* ✅ Google Analytics Scripts */}
           {GA_ID && (
             <>
               <Script
@@ -45,17 +44,8 @@ export default function RootLayout({
             </>
           )}
         </head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WEZF6YEB9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7WEZF6YEB9');
-</script>
         <body className="relative">
-          <GATracker /> {/* 🆕 Track route changes */}
+          <GATracker /> {/* ✅ Route tracking */}
           <Navbar />
           <LayoutWrapper>{children}</LayoutWrapper>
           <Footer />
@@ -64,3 +54,4 @@ export default function RootLayout({
     </ReactLenis>
   );
 }
+
