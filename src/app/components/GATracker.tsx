@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
@@ -13,7 +13,7 @@ export default function GATracker() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (window.gtag) {
+    if (typeof window.gtag === "function") {
       window.gtag("config", "G-7WEZF6YEB9", {
         page_path: pathname,
       });
