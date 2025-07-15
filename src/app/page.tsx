@@ -8,6 +8,12 @@ import VideoSection from "@/components/landingPage/VideoSection";
 import MobilePage from "@/components/MobilePage";
 import type { Metadata } from "next";
 
+
+
+
+
+
+
 export const metadata: Metadata = {
   title: "Lafetch",
   description:
