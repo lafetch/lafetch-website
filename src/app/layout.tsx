@@ -9,11 +9,7 @@ import GATracker from "./components/GATracker";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-7WEZF6YEB9"; // fallback if not set in env
 
-export const metadata: Metadata = {
-  title: "Lafetch",
-  description:
-    "We’re on a quest to create a one stop shop by constantly collaborating with home grown brands where every find tells a story, and it’s all just a click away.",
-};
+
 
 export default function RootLayout({
   children,
